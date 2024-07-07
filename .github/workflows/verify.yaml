@@ -26,5 +26,6 @@ jobs:
     - id: run-tests
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GH_PAT: ${{ secrets.GH_PAT }}
       run: oj-verify all
       working-directory: ./verify
