@@ -1,0 +1,11 @@
+[package]
+name = "verify"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lib = { path = "../lib" }
+
+[[bin]]
+name = "fastio-i64"
+path = "src/util/fastio-i64.rs"
