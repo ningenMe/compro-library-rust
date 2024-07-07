@@ -7,5 +7,5 @@ edition = "2021"
 lib = { path = "../lib" }
 
 [[bin]]
-name = "fastio-i64"
-path = "src/util/fastio-i64.rs"
+name = "fastio-i128"
+path = "src/util/fastio-i128.rs"
