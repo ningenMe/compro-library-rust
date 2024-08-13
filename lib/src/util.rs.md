@@ -18,6 +18,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: verify/src/util/fastio-i128.rs
     title: verify/src/util/fastio-i128.rs
+  - icon: ':heavy_check_mark:'
+    path: verify/src/util/fastio-i64.rs
+    title: verify/src/util/fastio-i64.rs
   _isVerificationFailed: false
   _pathExtension: rs
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -38,9 +41,10 @@ data:
   requiredBy:
   - lib/src/lib.rs
   - lib/src/util/fastio.rs
-  timestamp: '2024-07-08 02:22:44+09:00'
+  timestamp: '2024-08-13 11:21:36+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - verify/src/util/fastio-i64.rs
   - verify/src/util/fastio-i128.rs
 documentation_of: lib/src/util.rs
 layout: document

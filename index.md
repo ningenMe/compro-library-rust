@@ -20,5 +20,8 @@ data:
     - icon: ':heavy_check_mark:'
       path: verify/src/util/fastio-i128.rs
       title: verify/src/util/fastio-i128.rs
+    - icon: ':heavy_check_mark:'
+      path: verify/src/util/fastio-i64.rs
+      title: verify/src/util/fastio-i64.rs
 layout: toppage
 ---

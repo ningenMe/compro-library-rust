@@ -18,6 +18,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: verify/src/util/fastio-i128.rs
     title: verify/src/util/fastio-i128.rs
+  - icon: ':heavy_check_mark:'
+    path: verify/src/util/fastio-i64.rs
+    title: verify/src/util/fastio-i64.rs
   _isVerificationFailed: false
   _pathExtension: rs
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -56,11 +59,16 @@ data:
     \ mut ch) = self.get_integer_first_char();\n        let mut x: i32 = 0;\n    \
     \    while CH_0 <= ch && ch <= CH_9 {\n            x = x * 10 + (ch - CH_0) as\
     \ i32;\n            ch = self.get_any_char();\n        }\n        return if is_negative\
-    \ { -x } else { x };\n    }\n}\nimpl Reader<i128> for IO<'_> {\n    fn read(&mut\
-    \ self) -> i128 {\n        let (is_negative, mut ch) = self.get_integer_first_char();\n\
-    \        let mut x: i128 = 0;\n        while CH_0 <= ch && ch <= CH_9 {\n    \
-    \        x = x * 10 + (ch - CH_0) as i128;\n            ch = self.get_any_char();\n\
-    \        }\n        return if is_negative { -x } else { x };\n    }\n}\n"
+    \ { -x } else { x };\n    }\n}\nimpl Reader<i64> for IO<'_> {\n    fn read(&mut\
+    \ self) -> i64 {\n        let (is_negative, mut ch) = self.get_integer_first_char();\n\
+    \        let mut x: i64 = 0;\n        while CH_0 <= ch && ch <= CH_9 {\n     \
+    \       x = x * 10 + (ch - CH_0) as i64;\n            ch = self.get_any_char();\n\
+    \        }\n        return if is_negative { -x } else { x };\n    }\n}\nimpl Reader<i128>\
+    \ for IO<'_> {\n    fn read(&mut self) -> i128 {\n        let (is_negative, mut\
+    \ ch) = self.get_integer_first_char();\n        let mut x: i128 = 0;\n       \
+    \ while CH_0 <= ch && ch <= CH_9 {\n            x = x * 10 + (ch - CH_0) as i128;\n\
+    \            ch = self.get_any_char();\n        }\n        return if is_negative\
+    \ { -x } else { x };\n    }\n}\n"
   dependsOn:
   - lib/src/lib.rs
   - lib/src/util.rs
@@ -69,9 +77,10 @@ data:
   requiredBy:
   - lib/src/lib.rs
   - lib/src/util.rs
-  timestamp: '2024-07-08 02:22:44+09:00'
+  timestamp: '2024-08-13 11:21:36+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - verify/src/util/fastio-i64.rs
   - verify/src/util/fastio-i128.rs
 documentation_of: lib/src/util/fastio.rs
 layout: document

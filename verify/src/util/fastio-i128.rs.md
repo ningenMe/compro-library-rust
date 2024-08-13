@@ -34,7 +34,7 @@ data:
   isVerificationFile: true
   path: verify/src/util/fastio-i128.rs
   requiredBy: []
-  timestamp: '2024-07-08 02:32:28+09:00'
+  timestamp: '2024-08-13 11:21:36+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: verify/src/util/fastio-i128.rs
