@@ -9,3 +9,6 @@ lib = { path = "../lib" }
 [[bin]]
 name = "fastio-i128"
 path = "src/util/fastio-i128.rs"
+[[bin]]
+name = "fastio-i64"
+path = "src/util/fastio-i64.rs"

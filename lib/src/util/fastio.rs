@@ -77,6 +77,17 @@ impl Reader<i32> for IO<'_> {
         return if is_negative { -x } else { x };
     }
 }
+impl Reader<i64> for IO<'_> {
+    fn read(&mut self) -> i64 {
+        let (is_negative, mut ch) = self.get_integer_first_char();
+        let mut x: i64 = 0;
+        while CH_0 <= ch && ch <= CH_9 {
+            x = x * 10 + (ch - CH_0) as i64;
+            ch = self.get_any_char();
+        }
+        return if is_negative { -x } else { x };
+    }
+}
 impl Reader<i128> for IO<'_> {
     fn read(&mut self) -> i128 {
         let (is_negative, mut ch) = self.get_integer_first_char();
